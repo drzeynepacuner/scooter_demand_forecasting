@@ -145,7 +145,7 @@ The Flask API serves real-time predictions using the trained model.
 
   3. Environment Variables
 
-    - MODEL_PATH: (Optional) Path to the trained model. Defaults to final_model.joblib in the project root.
+  - MODEL_PATH: (Optional) Path to the trained model. Defaults to final_model.joblib in the project root.
     You can set it before running the server if needed:
     
    ```bash
