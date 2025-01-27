@@ -114,7 +114,7 @@ Ensure that the input data files are placed in the input/ directory:
   --weather_csv input/weather_data.csv \
   --test_cutoff_date 2020-08-25 \
   --model_out_path final_model.joblib
-```
+  ```
 
   Parameters:
   --rides_csv: Path to the ride data CSV.
@@ -138,9 +138,9 @@ The Flask API serves real-time predictions using the trained model.
 
   2. Start the Flask Server
 
-    ```bash
+  ```bash
     python src/app.py
-    ```
+  ```
   The server will start on http://0.0.0.0:5000/.
 
   3. Environment Variables
@@ -148,10 +148,10 @@ The Flask API serves real-time predictions using the trained model.
     - MODEL_PATH: (Optional) Path to the trained model. Defaults to final_model.joblib in the project root.
     You can set it before running the server if needed:
     
-    ```bash
+   ```bash
     export MODEL_PATH=path/to/your_model.joblib
     python src/app.py
-    ```
+   ```
 
 
 
