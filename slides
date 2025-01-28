@@ -1,0 +1,84 @@
+---
+marp: true
+theme: default
+paginate: true
+---
+
+# Scooter Demand Forecasting API - Project Summary
+
+---
+
+## Slide 1: Key Findings
+
+- **Accurate Demand Predictions**
+  - Achieved high accuracy with RMSE, MAE, and low MAPE.
+  - Reliable forecasting facilitates optimal scooter distribution.
+
+- **Effective Feature Engineering**
+  - Integration of temporal (e.g., day of the week) and weather-related features enhances model performance.
+  - Demand lag features provide valuable historical context.
+
+- **Robust Model Performance**
+  - Consistent results across different evaluation metrics.
+  - Model effectively captures demand patterns and seasonal trends.
+
+---
+
+## Slide 2: Evaluation Metrics and Reasoning
+
+- **Root Mean Squared Error (RMSE)**
+  - **Purpose:** Measures the square root of the average squared differences between predicted and actual values.
+  - **Reasoning:** Emphasizes larger errors, ensuring the model minimizes significant prediction deviations.
+
+- **Mean Absolute Error (MAE)**
+  - **Purpose:** Calculates the average absolute differences between predicted and actual values.
+  - **Reasoning:** Provides a clear interpretation of average error in original units, offering straightforward performance insight.
+
+- **Mean Absolute Percentage Error (MAPE)**
+  - **Purpose:** Computes the average absolute percentage differences between predicted and actual values.
+  - **Reasoning:** Offers a relative error measure, facilitating performance comparison across different scales and contexts.
+
+- **Combined Insight:**
+  - Utilizing RMSE, MAE, and MAPE ensures a comprehensive evaluation, balancing sensitivity to large errors with overall prediction accuracy.
+
+---
+
+## Slide 3: Next Steps and Productionizing the Model
+
+- **Model Refinement**
+  - **Simplify Feature Set:** Remove less impactful features (e.g., `demand_lag_1`) to streamline real-time predictions.
+  - **Enhance Feature Engineering:** Incorporate additional indicators like holidays, special events, and granular weather data.
+
+- **Deployment Strategy**
+  - **Containerization with Docker:** Ensure consistent deployment environments across different platforms.
+  - **Orchestration with Kubernetes:** Achieve scalable and resilient deployment, handling varying traffic loads efficiently.
+
+- **Monitoring and Maintenance**
+  - **Continuous Monitoring:** Implement logging and alerting systems using Prometheus and Grafana to track API usage and model performance.
+  - **Automated Retraining:** Set up pipelines for periodic model retraining with new data to maintain accuracy over time.
+
+- **Security Enhancements**
+  - **Authentication and Authorization:** Protect API endpoints using API keys or OAuth to restrict access to authorized users.
+  - **Input Validation:** Ensure all incoming data is validated and sanitized to prevent malicious inputs from affecting predictions.
+
+---
+
+## Slide 4: Business Impact
+
+- **Operational Efficiency**
+  - **Optimized Scooter Distribution:** Reduces costs associated with overstocking or shortages by aligning scooter availability with predicted demand.
+  - **Improved Resource Allocation:** Enhances the deployment of maintenance teams based on forecasted high-demand areas.
+
+- **Customer Satisfaction**
+  - **Enhanced Service Availability:** Ensures scooters are available where and when customers need them, reducing wait times.
+  - **Increased User Loyalty:** Positive user experiences foster repeat usage and positive word-of-mouth referrals.
+
+- **Strategic Decision-Making**
+  - **Data-Driven Insights:** Supports initiatives like market expansion, targeted marketing campaigns, and dynamic pricing strategies.
+  - **Inventory Management:** Aids in maintaining optimal scooter fleet levels, preventing both excess and scarcity.
+
+- **Resource Optimization**
+  - **Efficient Maintenance Scheduling:** Predicts high-demand periods, allowing for proactive maintenance and minimizing downtime.
+  - **Maximized Fleet Utilization:** Ensures scooters are deployed effectively, enhancing overall fleet productivity and profitability.
+
+---
