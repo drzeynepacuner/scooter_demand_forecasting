@@ -139,7 +139,7 @@ The Flask API serves real-time predictions using the trained model.
   2. Start the Flask Server
 
   ```bash
-    python src/app.py
+    python app.py
   ```
   The server will start on http://0.0.0.0:5000/.
 
