@@ -12,7 +12,7 @@ USE_LOG_MODEL = True
 FEATURES = [
     "day_of_week",
     "precipitation",
-    "demand_lag_1",
+#   "demand_lag_1",
 ]
 
 MODEL_PATH = os.environ.get("MODEL_PATH", "final_model.joblib")
